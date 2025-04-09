@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send Secure Message</title>
+  <link rel="stylesheet" href="/front end/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>🔐 Secure Health</h2>
+      </div>
+      <ul class="nav">
+        <li><a href="/send-message"><i class="fas fa-paper-plane"></i> Send Message</a></li>
+        <li><a href="/received-messages"><i class="fas fa-inbox"></i> Received Messages</a></li>
+        <li><a href="/upload-file"><i class="fas fa-upload"></i> Upload File</a></li>
+        <li><a href="/profile"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Send Secure Message</h1>
+      <form id="messageForm">
+        <label for="recipient">Recipient</label>
+        <select id="recipient" name="recipient" required>
+          <option value="">--Select--</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Admin">Nurse</option>
+          <option value="Patient">Patient</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Message Subject" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+
+        <label for="file">Attach File (PDF, JPEG, DOCX)</label>
+        <input type="file" id="file" name="file" accept=".pdf,.jpeg,.jpg,.docx" />
+
+        <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

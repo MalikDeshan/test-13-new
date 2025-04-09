@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Received Messages</title>
+  <link rel="stylesheet" href="/front end/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>🔐 Secure Health</h2>
+      </div>
+      <ul class="nav">
+        <li><a href="/send-message"><i class="fas fa-paper-plane"></i> Send Message</a></li>
+        <li><a href="/received-messages"><i class="fas fa-inbox"></i> Received Messages</a></li>
+        <li><a href="/upload-file"><i class="fas fa-upload"></i> Upload File</a></li>
+        <li><a href="/profile"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Received Messages</h1>
+      <div class="message-list">
+        <div class="message">
+          <p><strong>From:</strong> Dr. John</p>
+          <p><strong>Subject:</strong> Test Results</p>
+          <p><strong>Message:</strong> Your test results are ready for review...</p>
+          <button class="view-btn">View Message</button>
+        </div>
+        <!-- Repeat this block for each received message -->
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

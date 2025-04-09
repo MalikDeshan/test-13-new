@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload File</title>
+  <link rel="stylesheet" href="/front end/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>🔐 Secure Health</h2>
+      </div>
+      <ul class="nav">
+        <li><a href="/send-message"><i class="fas fa-paper-plane"></i> Send Message</a></li>
+        <li><a href="/received-messages"><i class="fas fa-inbox"></i> Received Messages</a></li>
+        <li><a href="/upload-file"><i class="fas fa-upload"></i> Upload File</a></li>
+        <li><a href="/profile"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Upload Secure File</h1>
+      <form id="fileUploadForm">
+        <label for="file">Choose File (PDF, JPEG, DOCX)</label>
+        <input type="file" id="file" name="file" accept=".pdf,.jpeg,.jpg,.docx" required />
+
+        <button type="submit" class="upload-btn"><i class="fas fa-cloud-upload-alt"></i> Upload File</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

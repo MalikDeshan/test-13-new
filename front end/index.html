@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Secure Health</title>
+  <link rel="stylesheet" href="/front end/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>🔐 Secure Health</h2>
+      </div>
+      <ul class="nav">
+        <li><a href="/send-message"><i class="fas fa-paper-plane"></i> Send Message</a></li>
+        <li><a href="/received-messages"><i class="fas fa-inbox"></i> Received Messages</a></li>
+        <li><a href="/upload-file"><i class="fas fa-upload"></i> Upload File</a></li>
+        <li><a href="/profile"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="welcome">
+        <h1>Welcome, <span id="userName">John Doe</span>!</h1>
+        <p>Role: <span id="userRole">Doctor</span></p>
+        <p>Your current health system status:</p>
+        <div class="status">
+          <div class="status-card">
+            <h3>Messages</h3>
+            <p>5 unread messages</p>
+            <a href="/received-messages" class="btn">View Messages</a>
+          </div>
+          <div class="status-card">
+            <h3>Recent Uploads</h3>
+            <p>3 new files uploaded</p>
+            <a href="/upload-file" class="btn">View Uploads</a>
+          </div>
+          <div class="status-card">
+            <h3>Patient Info</h3>
+            <p>4 new patient records</p>
+            <a href="/patient-info" class="btn">View Patients</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
